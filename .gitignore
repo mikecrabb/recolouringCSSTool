@@ -9,7 +9,4 @@ out
 gen
 .gitignore
 .idea/
-css/
-index.html
-js/
 readme.md

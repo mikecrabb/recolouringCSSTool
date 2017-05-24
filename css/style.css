@@ -1,0 +1,88 @@
+.selections {
+    padding: 0 !important;
+}
+
+.selectorContainer {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #b3ccd2;
+}
+
+.selectorContainer ul li {
+    font-size: smaller;
+}
+
+.atomContainer{
+    padding: 10px;
+    /*font-family: 'OpenDyslexic', Inconsolata, Monaco, Consolas, 'Courier New', Courier;*/
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    font-size: smaller;
+}
+
+.selectorContainer h4{
+    font-size: medium;
+}
+
+li {
+    list-style: none;
+}
+
+ul{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+header{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #81999f;
+}
+
+.atomGutter{
+    background-color: #dddddd;
+}
+
+.atomCodeSpace{
+    background-color: #1d1f21;
+    color: #c5c8c6;
+}
+
+.atomGutter > p{
+    margin-bottom: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.atomCodeSpace > p{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.syntaxColour1 {
+    color: #cc6666;
+}
+
+.syntaxColour2{
+    color: #de935f;
+}
+
+.syntaxColour3{
+    color: #b5bd68;
+}
+
+.syntaxColour4{
+    color: #b294bb;
+}
+
+.syntaxColour5{
+    color: #8abeb7;
+}
+
+.syntaxColour6{
+    color: #81a2be;
+}
+
+.syntaxComment{
+    color: #969896;
+}
