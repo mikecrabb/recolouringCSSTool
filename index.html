@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
@@ -20,132 +21,252 @@
 
     <div class="row">
 
-    <div class="col-md-3 selections">
-        <div class="selectorContainer">
+        <div class="col-md-3 selections">
+            <div class="selectorContainer">
 
 
-        <h3>Editable Items</h3>
-            <h4>Gutter</h4>
-        <ul>
-            <li><input type="color" id="gutterBackgroundSelector"> Gutter Background Colour</li>
-            <li><input type="color" id="gutterTextSelector"> Gutter Text Colour</li>
-        </ul>
-            <h4>Main Area</h4>
-            <ul>
-            <li><input type="color" id="mainBackgroundSelector"> Main Area Background Colour</li>
-            <li><input type="color" id="mainSyntaxSelector" > Main Syntax Colour</li>
+                <h3>Editable Items</h3>
+                <h4>Gutter</h4>
                 <ul>
-                <li><input type="color" id="commentSyntaxSelector"> Comments</li>
-                <li><input type="color" id="syntax1Selector"> Tags</li>
-                <li><input type="color" id="syntax2Selector"> Attributes</li>
-                <li><input type="color" id="syntax3Selector"> Strings</li>
-                <li><input type="color" id="syntax4Selector"> Keywords</li>
-                <li><input type="color" id="syntax5Selector"> Functions</li>
-                <li><input type="color" id="syntax6Selector"> Names and IDs</li>
-            </ul>
-        </ul>
-            <h4>Fonts</h4>
-            <ul>
-                <li><input type="radio" name="font" checked onclick="selectDefaultFont()"> Default Font</li>
-                <li><input type="radio" name="font" onclick="selectOpenDyslexicFont()"> OpenDyslexic Font</li>
-            </ul>
-            <h3>Preset Schemes</h3>
-            <button id="defaultTheme" class="btn btn-secondary defaultButton" onclick="changeTheme('#DDDDDD', '#000000','#1D1F21','#C5C8C6','#969896','#CC6666','#DE935F','#B5BD68','#B294BB','#8ABEB7','#81A2BE')">Default</button>
-            <button class="btn aquaButton" onclick="changeTheme('#92EFED', '#000080','#A0D3F1', '#00009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#8842B7',	'#7DFB59','#494E52')">Aqua</button>
-            <button class="btn purpleButton" onclick="changeTheme('#5900A2','#DCB7F8','#DBB9F6','#58009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','	#30AB29','#161718')">Purple</button>
-            <button class="btn neutralButton" onclick="changeTheme('#BB9282','#ABFEB1','#CCC7BB','#555500','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">Neutral</button>
-            <button class="btn magentaButton" onclick="changeTheme('#A66A91','#42264A','#F3B6D8','#710038','#FFFFFF','#FB3333','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">Magenta</button>
-            <button class="btn blueButton" onclick="changeTheme('#8ED9FD','#25334B','#96BAFE','#061B6A','#FFFFFF','#D60303','#F224F2','#F8F10C','#8D03AB','#20771C','#161718')">Blue</button>
-            <button class="btn lilacButton" onclick="changeTheme('#DF8CFF','#61306B','#B8A8F3','#47066A','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">Lilac</button>
-            <button class="btn roseButton" onclick="changeTheme('#D79797','#FCF3E0','#F4BCB3','#710016','#FFFFFF','#0C59CD','#F224F2','#F8F10C','#FD2626','#20771C','#0CB6C9')">Rose</button>
-            <button class="btn turquoiseButton" onclick="changeTheme('#00B0B0','#B4FEFB','#9CE4D8','#002771','#FFFFFF','#D90000','#F224F2','#F8F10C','#6F14D1','#20771C','#4A3E49')">Turqoise</button>
-            <button class="btn yellowButton" onclick="changeTheme('#C7982C','#FBF9B7','#FEFE9C','#5A4416','#9B9B9B','#D90000','#F224F2','#CF7954','#CF7954','#37CB30','#0E3F7A')">Yellow</button>
-            <button class="btn orangeButton" onclick="changeTheme('#E48E0E','#FCE4D6','#F2C668','#4E3C10','#7A7A7A','#D90000','#F224F2','#F8FF71','#6F14D1','#76AE75','#0E3F7A')">Orange</button>
-            <button class="btn appleButton" onclick="changeTheme('#669C56','#D2FFD3','#C1F08E','#263E20','#7A7A7A','#D90000','#F224F2','#BF810D','#6F14D1','#804069','#0E3F7A')">Apple</button>
-            <button class="btn leafButton" onclick="changeTheme('#568448','#D2FFD3','#86E893','#1D3018','#FFFFFF','#D90000','#D30CD3','#935115','#808040','#FF8000','#0E3F7A')">Leaf</button>
+                    <li><input type="color" id="gutterBackgroundSelector"> Gutter Background Colour</li>
+                    <li><input type="color" id="gutterTextSelector"> Gutter Text Colour</li>
+                </ul>
+                <h4>Main Area</h4>
+                <ul>
+                    <li><input type="color" id="mainBackgroundSelector"> Main Area Background Colour</li>
+                    <li><input type="color" id="mainSyntaxSelector"> Main Syntax Colour</li>
+                    <ul>
+                        <li><input type="color" id="commentSyntaxSelector"> Comments</li>
+                        <li><input type="color" id="syntax1Selector"> Tags</li>
+                        <li><input type="color" id="syntax2Selector"> Attributes</li>
+                        <li><input type="color" id="syntax3Selector"> Strings</li>
+                        <li><input type="color" id="syntax4Selector"> Keywords</li>
+                        <li><input type="color" id="syntax5Selector"> Functions</li>
+                        <li><input type="color" id="syntax6Selector"> Names and IDs</li>
+                    </ul>
+                </ul>
+                <h4>Fonts</h4>
+                <ul>
+                    <li><input type="radio" name="font" checked onclick="selectDefaultFont()"> Default Font</li>
+                    <li><input type="radio" name="font" onclick="selectOpenDyslexicFont()"> OpenDyslexic Font</li>
+                </ul>
+                <h3>Preset Schemes</h3>
 
+                <div class="row colour-row">
+                    <div class="col-md-4">
+                        <button class="btn aquaButton btn-sm"
+                                onclick="changeTheme('#92EFED', '#000080','#A0D3F1', '#00009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#8842B7',	'#7DFB59','#494E52')">
+                            Aqua
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn purpleButton btn-sm"
+                                onclick="changeTheme('#5900A2','#DCB7F8','#DBB9F6','#58009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','	#30AB29','#161718')">
+                            Purple
+                        </button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn neutralButton btn-sm"
+                                onclick="changeTheme('#BB9282','#ABFEB1','#CCC7BB','#555500','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
+                            Neutral
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="row colour-row">
+                    <div class="col-md-4">
+                        <button class="btn magentaButton btn-sm"
+                                onclick="changeTheme('#A66A91','#42264A','#F3B6D8','#710038','#FFFFFF','#FB3333','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
+                            Magenta
+                        </button>
+
+                    </div>
+                    <div class="col-md-4">
+
+                    <button class="btn lilacButton btn-sm"
+                            onclick="changeTheme('#DF8CFF','#61306B','#B8A8F3','#47066A','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
+                        Lilac
+                    </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn blueButton btn-sm"
+                                onclick="changeTheme('#8ED9FD','#25334B','#96BAFE','#061B6A','#FFFFFF','#D60303','#F224F2','#F8F10C','#8D03AB','#20771C','#161718')">
+                            Blue
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row colour-row">
+                    <div class="col-md-4">
+                        <button class="btn yellowButton btn-sm"
+                                onclick="changeTheme('#C7982C','#FBF9B7','#FEFE9C','#5A4416','#9B9B9B','#D90000','#F224F2','#CF7954','#CF7954','#37CB30','#0E3F7A')">
+                            Yellow
+                        </button>
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <button class="btn turquoiseButton btn-sm"
+                                onclick="changeTheme('#00B0B0','#B4FEFB','#9CE4D8','#002771','#FFFFFF','#D90000','#F224F2','#F8F10C','#6F14D1','#20771C','#4A3E49')">
+                            Turqoise
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn roseButton btn-sm"
+                                onclick="changeTheme('#D79797','#FCF3E0','#F4BCB3','#710016','#FFFFFF','#0C59CD','#F224F2','#F8F10C','#FD2626','#20771C','#0CB6C9')">
+                            Rose
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row colour-row">
+                    <div class="col-md-4">
+                        <button class="btn leafButton btn-sm"
+                                onclick="changeTheme('#568448','#D2FFD3','#86E893','#1D3018','#FFFFFF','#D90000','#D30CD3','#935115','#808040','#FF8000','#0E3F7A')">
+                            Leaf
+                        </button>
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <button class="btn orangeButton btn-sm"
+                                onclick="changeTheme('#E48E0E','#FCE4D6','#F2C668','#4E3C10','#7A7A7A','#D90000','#F224F2','#F8FF71','#6F14D1','#76AE75','#0E3F7A')">
+                            Orange
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn appleButton btn-sm"
+                                onclick="changeTheme('#669C56','#D2FFD3','#C1F08E','#263E20','#7A7A7A','#D90000','#F224F2','#BF810D','#6F14D1','#804069','#0E3F7A')">
+                            Apple
+                        </button>
+                    </div>
+                </div>
+
+
+                <button id="defaultTheme" class="btn btn-secondary defaultButton"
+                        onclick="changeTheme('#DDDDDD', '#000000','#1D1F21','#C5C8C6','#969896','#CC6666','#DE935F','#B5BD68','#B294BB','#8ABEB7','#81A2BE')">
+                    Default
+                </button>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="atomContainer col-md-9">
+            <div class="row">
+                <div class="atomGutter col-md-1">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                    <p>11</p>
+                    <p>12</p>
+                    <p>13</p>
+                    <p>14</p>
+                    <p>15</p>
+                    <p>16</p>
+                    <p>&emsp;</p>
+                    <p>&emsp;</p>
+                    <p>17</p>
+                    <p>18</p>
+                    <p>19</p>
+                    <p>20</p>
+                    <p>&emsp;</p>
+                    <p>&emsp;</p>
+                    <p>21</p>
+                    <p>22</p>
+                    <p>&emsp;</p>
+                    <p>23</p>
+                    <p>24</p>
+                    <p>25</p>
+                    <p>26</p>
+
+                </div>
+                <div class="atomCodeSpace col-md-11">
+                    <p>&lt;<span class="syntaxColour1">html</span>&gt; <span class="syntaxComment">&lt;!-- This website is made by me! --&gt;</span>
+                    </p>
+                    <p>&emsp;&lt;<span class="syntaxColour1">head</span>&gt;</p>
+                    <p>&emsp;&emsp;&lt;<span class="syntaxColour1">link</span> <span
+                            class="syntaxColour2">rel</span>="<span class="syntaxColour3">stylesheet</span>" <span
+                            class="syntaxColour2">href</span>="<span class="syntaxColour3">/css/master.css</span>"&gt;
+                    </p>
+                    <p>&emsp;&emsp;&lt;<span class="syntaxColour1">title</span>&gt;My Home Page&lt;/<span
+                            class="syntaxColour1">title</span>&gt;</p>
+                    <p>&emsp;</p>
+                    <p>&emsp;&emsp;&lt;<span class="syntaxColour1">script</span>&gt;</p>
+                    <p>&emsp;&emsp;&emsp;<span class="syntaxColour4">function</span> <span class="syntaxColour6">myFunction()</span>
+                        {</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;<span></span> <span class="syntaxColour1">document</span>.<span
+                            class="syntaxColour5">getElementByID</span>("<span
+                            class="syntaxColour3">testArea</span>").<span class="syntaxColour1">innerHTML</span> =
+                        "<span class="syntaxColour3">Hello World!</span>";</p>
+                    <p>&emsp;&emsp;&emsp;}</p>
+                    <p>&emsp;&emsp;&lt;/<span class="syntaxColour1">script</span>&gt;</p>
+                    <p>&emsp;&lt;<span class="syntaxColour1">head</span>&gt;</p>
+                    <p>&emsp;</p>
+                    <p>&emsp;&lt;<span class="syntaxColour1">body</span>&gt;</p>
+                    <p>&emsp;&emsp;&lt;<span class="syntaxColour1">header</span>&gt;</p>
+                    <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">h1</span> <span
+                            class="syntaxColour2">class</span>="<span class="syntaxColour3">heading</span>"&gt;Welcome
+                        to my website&lt;/<span class="syntaxColour1">h1</span>&gt;</p>
+                    <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span>&gt;This is a piece of introduction
+                        text for my website. My website contains lots of amazing things that are really good for people
+                        to pay attention to and read. I hope that people visit my website a lot because it is so cool&lt;/<span
+                                class="syntaxColour1">p</span>&gt;</p>
+                    <p>&emsp;&emsp;&lt;/<span class="syntaxColour1">header</span>&gt;</p>
+                    <p>&emsp;&emsp;&lt;<span class="syntaxColour1">main</span>&gt;</p>
+                    <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">h2</span> <span
+                            class="syntaxColour2">class</span>="<span class="syntaxColour3">heading</span>"&gt;Main
+                        Section&lt;/<span class="syntaxColour1">h2</span>&gt;</p>
+                    <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span>&gt;This is the main part of the
+                        website where all of the text associated with the website will be placed. People will read all
+                        of this text and then be able to find out what is going on in my life. Trust me, its all
+                        awesome.&lt;/<span class="syntaxColour1">p</span>&gt;</p>
+                    <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">button</span> <span class="syntaxColour2">onclick</span>="<span
+                            class="syntaxColour3">myFunction()</span>"&gt;Push Me!&lt;/<span class="syntaxColour1">button</span>&gt;
+                    </p>
+                    <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span>&gt;This is a second paragraph of text
+                        which contains &lt;<span class="syntaxColour1">a</span> <span class="syntaxColour2">href</span>="<span
+                                class="syntaxColour3">mylink.html</span>"&gt;a link&lt;/<span
+                                class="syntaxColour1">a</span>&gt; which goes to a second page on the website.&lt;/<span
+                                class="syntaxColour1">p</span>&gt;</p>
+                    <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span> <span class="syntaxColour6">id</span>="<span
+                            class="syntaxColour3">testArea</span>&gt;</p>
+                    <p>&emsp;&emsp;&lt;/<span class="syntaxColour1">main</span></span>&gt;</p>
+                    <p>&emsp;&lt;/<span class="syntaxColour1">body</span>&gt;</p>
+                    <p>&lt;/<span class="syntaxColour1">html</span>&gt;</p>
+                </div>
+            </div>
 
         </div>
-    </div>
-
-    <div class="atomContainer col-md-9">
-        <div class="row">
-        <div class="atomGutter col-md-1">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>&emsp;</p>
-            <p>&emsp;</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>&emsp;</p>
-            <p>&emsp;</p>
-            <p>21</p>
-            <p>22</p>
-            <p>&emsp;</p>
-            <p>23</p>
-            <p>24</p>
-            <p>25</p>
-            <p>26</p>
-
-        </div>
-        <div class="atomCodeSpace col-md-11">
-            <p>&lt;<span class="syntaxColour1">html</span>&gt; <span class="syntaxComment">&lt;!-- This website is made by me! --&gt;</span></p>
-            <p>&emsp;&lt;<span class="syntaxColour1">head</span>&gt;</p>
-            <p>&emsp;&emsp;&lt;<span class="syntaxColour1">link</span> <span class="syntaxColour2">rel</span>="<span class="syntaxColour3">stylesheet</span>" <span class="syntaxColour2">href</span>="<span class="syntaxColour3">/css/master.css</span>"&gt;</p>
-            <p>&emsp;&emsp;&lt;<span class="syntaxColour1">title</span>&gt;My Home Page&lt;/<span class="syntaxColour1">title</span>&gt;</p>
-            <p>&emsp;</p>
-            <p>&emsp;&emsp;&lt;<span class="syntaxColour1">script</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;<span class="syntaxColour4">function</span> <span class="syntaxColour6">myFunction()</span> {</p>
-            <p>&emsp;&emsp;&emsp;&emsp;<span></span> <span class="syntaxColour1">document</span>.<span class="syntaxColour5">getElementByID</span>("<span class="syntaxColour3">testArea</span>").<span class="syntaxColour1">innerHTML</span> = "<span class="syntaxColour3">Hello World!</span>";</p>
-            <p>&emsp;&emsp;&emsp;}</p>
-            <p>&emsp;&emsp;&lt;/<span class="syntaxColour1">script</span>&gt;</p>
-            <p>&emsp;&lt;<span class="syntaxColour1">head</span>&gt;</p>
-            <p>&emsp;</p>
-            <p>&emsp;&lt;<span class="syntaxColour1">body</span>&gt;</p>
-            <p>&emsp;&emsp;&lt;<span class="syntaxColour1">header</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">h1</span> <span class="syntaxColour2">class</span>="<span class="syntaxColour3">heading</span>"&gt;Welcome to my website&lt;/<span class="syntaxColour1">h1</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span>&gt;This is a piece of introduction text for my website. My website contains lots of amazing things that are really good for people to pay attention to and read. I hope that people visit my website a lot because it is so cool&lt;/<span class="syntaxColour1">p</span>&gt;</p>
-            <p>&emsp;&emsp;&lt;/<span class="syntaxColour1">header</span>&gt;</p>
-            <p>&emsp;&emsp;&lt;<span class="syntaxColour1">main</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">h2</span> <span class="syntaxColour2">class</span>="<span class="syntaxColour3">heading</span>"&gt;Main Section&lt;/<span class="syntaxColour1">h2</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span>&gt;This is the main part of the website where all of the text associated with the website will be placed. People will read all of this text and then be able to find out what is going on in my life. Trust me, its all awesome.&lt;/<span class="syntaxColour1">p</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">button</span> <span class="syntaxColour2">onclick</span>="<span class="syntaxColour3">myFunction()</span>"&gt;Push Me!&lt;/<span class="syntaxColour1">button</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span>&gt;This is a second paragraph of text which contains &lt;<span class="syntaxColour1">a</span> <span class="syntaxColour2">href</span>="<span class="syntaxColour3">mylink.html</span>"&gt;a link&lt;/<span class="syntaxColour1">a</span>&gt; which goes to a second page on the website.&lt;/<span class="syntaxColour1">p</span>&gt;</p>
-            <p>&emsp;&emsp;&emsp;&lt;<span class="syntaxColour1">p</span> <span class="syntaxColour6">id</span>="<span class="syntaxColour3">testArea</span>&gt;</p>
-            <p>&emsp;&emsp;&lt;/<span class="syntaxColour1">main</span></span>&gt;</p>
-            <p>&emsp;&lt;/<span class="syntaxColour1">body</span>&gt;</p>
-            <p>&lt;/<span class="syntaxColour1">html</span>&gt;</p>
-        </div>
-        </div>
-
-    </div>
     </div>
 </div>
 
 
-
-
-
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
 <script src="js/realTimeChanges.js"></script>
 </body>
 </html>
