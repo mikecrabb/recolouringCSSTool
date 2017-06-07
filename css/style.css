@@ -86,3 +86,51 @@ header{
 .syntaxComment{
     color: #969896;
 }
+
+.aquaButton{
+    background-color: #82c5e8;
+}
+
+.purpleButton{
+    background-color: #dbb9f4;
+}
+
+.neutralButton{
+    background-color: #beb7a8;
+}
+
+.magentaButton{
+    background-color: #efa2ca;
+}
+
+.blueButton{
+    background-color: #7e99fa
+}
+
+.lilacButton{
+    background-color: #b9a9f2;
+}
+
+.roseButton{
+    background-color: #f2aaa3;
+}
+
+.turquoiseButton{
+    background-color: #78d8c7;
+}
+
+.yellowButton{
+    background-color: #fffb86;
+}
+
+.orangeButton{
+    background-color: #f3c164;
+}
+
+.appleButton{
+    background-color: #b5eb7e;
+}
+
+.leafButton{
+    background-color: #89e896;
+}

@@ -50,22 +50,20 @@
                 <li><input type="radio" name="font" onclick="selectOpenDyslexicFont()"> OpenDyslexic Font</li>
             </ul>
             <h3>Preset Schemes</h3>
-            <button class="btn btn-secondary">Aqua</button>
-            <button class="btn btn-secondary">Purple</button>
-            <button class="btn btn-secondary">Neutral</button>
-            <button class="btn btn-secondary">Magenta</button>
-            <button class="btn btn-secondary">Blue</button>
-            <button class="btn btn-secondary">Lilac</button>
-            <button class="btn btn-secondary">Rose</button>
-            <button class="btn btn-secondary">Turqoise</button>
-            <button class="btn btn-secondary">Yellow</button>
-            <button class="btn btn-secondary">Orange</button>
-            <button class="btn btn-secondary">Apple</button>
-            <button class="btn btn-secondary">Leaf</button>
+            <button id="defaultTheme" class="btn btn-secondary defaultButton" onclick="changeTheme('#DDDDDD', '#000000','#1D1F21','#C5C8C6','#969896','#CC6666','#DE935F','#B5BD68','#B294BB','#8ABEB7','#81A2BE')">Default</button>
+            <button class="btn aquaButton" onclick="changeTheme('#92EFED', '#000080','#A0D3F1', '#00009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#8842B7',	'#7DFB59','#494E52')">Aqua</button>
+            <button class="btn purpleButton" onclick="changeTheme('#5900A2','#DCB7F8','#DBB9F6','#58009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','	#30AB29','#161718')">Purple</button>
+            <button class="btn neutralButton" onclick="changeTheme('#BB9282','#ABFEB1','#CCC7BB','#555500','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">Neutral</button>
+            <button class="btn magentaButton" onclick="changeTheme('#A66A91','#42264A','#F3B6D8','#710038','#FFFFFF','#FB3333','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">Magenta</button>
+            <button class="btn blueButton" onclick="changeTheme('#8ED9FD','#25334B','#96BAFE','#061B6A','#FFFFFF','#D60303','#F224F2','#F8F10C','#8D03AB','#20771C','#161718')">Blue</button>
+            <button class="btn lilacButton" onclick="changeTheme('#DF8CFF','#61306B','#B8A8F3','#47066A','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">Lilac</button>
+            <button class="btn roseButton" onclick="changeTheme('#D79797','#FCF3E0','#F4BCB3','#710016','#FFFFFF','#0C59CD','#F224F2','#F8F10C','#FD2626','#20771C','#0CB6C9')">Rose</button>
+            <button class="btn turquoiseButton" onclick="changeTheme('#00B0B0','#B4FEFB','#9CE4D8','#002771','#FFFFFF','#D90000','#F224F2','#F8F10C','#6F14D1','#20771C','#4A3E49')">Turqoise</button>
+            <button class="btn yellowButton" onclick="changeTheme('#C7982C','#FBF9B7','#FEFE9C','#5A4416','#9B9B9B','#D90000','#F224F2','#CF7954','#CF7954','#37CB30','#0E3F7A')">Yellow</button>
+            <button class="btn orangeButton" onclick="changeTheme('#E48E0E','#FCE4D6','#F2C668','#4E3C10','#7A7A7A','#D90000','#F224F2','#F8FF71','#6F14D1','#76AE75','#0E3F7A')">Orange</button>
+            <button class="btn appleButton" onclick="changeTheme('#669C56','#D2FFD3','#C1F08E','#263E20','#7A7A7A','#D90000','#F224F2','#BF810D','#6F14D1','#804069','#0E3F7A')">Apple</button>
+            <button class="btn leafButton" onclick="changeTheme('#568448','#D2FFD3','#86E893','#1D3018','#FFFFFF','#D90000','#D30CD3','#935115','#808040','#FF8000','#0E3F7A')">Leaf</button>
 
-
-            <button id="greenTheme" class="btn btn-secondary btn-sm" onclick="changeTheme('#064E0A', '#B9FFB2','#DAFFE7','#007700','#3CC554','#27BF82','#B19A69','#B11069','#7A7F21','#7A7FFF','#BB0012')">Old Green</button>
-            <button id="defaultTheme" class="btn btn-secondary btn-sm" onclick="changeTheme('#DDDDDD', '#000000','#1D1F21','#C5C8C6','#969896','#CC6666','#DE935F','#B5BD68','#B294BB','#8ABEB7','#81A2BE')">Default</button>
 
         </div>
     </div>
