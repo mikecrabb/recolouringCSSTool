@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--My CSS-->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
@@ -24,32 +24,6 @@
         <div class="col-md-3 selections">
             <div class="selectorContainer">
 
-
-                <h3>Editable Items</h3>
-                <h4>Gutter</h4>
-                <ul>
-                    <li><input type="color" id="gutterBackgroundSelector"> Gutter Background Colour</li>
-                    <li><input type="color" id="gutterTextSelector"> Gutter Text Colour</li>
-                </ul>
-                <h4>Main Area</h4>
-                <ul>
-                    <li><input type="color" id="mainBackgroundSelector"> Main Area Background Colour</li>
-                    <li><input type="color" id="mainSyntaxSelector"> Main Syntax Colour</li>
-                    <ul>
-                        <li><input type="color" id="commentSyntaxSelector"> Comments</li>
-                        <li><input type="color" id="syntax1Selector"> Tags</li>
-                        <li><input type="color" id="syntax2Selector"> Attributes</li>
-                        <li><input type="color" id="syntax3Selector"> Strings</li>
-                        <li><input type="color" id="syntax4Selector"> Keywords</li>
-                        <li><input type="color" id="syntax5Selector"> Functions</li>
-                        <li><input type="color" id="syntax6Selector"> Names and IDs</li>
-                    </ul>
-                </ul>
-                <h4>Fonts</h4>
-                <ul>
-                    <li><input type="radio" name="font" checked onclick="selectDefaultFont()"> Default Font</li>
-                    <li><input type="radio" name="font" onclick="selectOpenDyslexicFont()"> OpenDyslexic Font</li>
-                </ul>
                 <h3>Preset Schemes</h3>
 
                 <div class="row colour-row">
@@ -85,10 +59,10 @@
                     </div>
                     <div class="col-md-4">
 
-                    <button class="btn lilacButton btn-sm"
-                            onclick="changeTheme('#DF8CFF','#61306B','#B8A8F3','#47066A','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
-                        Lilac
-                    </button>
+                        <button class="btn lilacButton btn-sm"
+                                onclick="changeTheme('#DF8CFF','#61306B','#B8A8F3','#47066A','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
+                            Lilac
+                        </button>
                     </div>
                     <div class="col-md-4">
                         <button class="btn blueButton btn-sm"
@@ -158,6 +132,36 @@
 
 
             </div>
+
+<div id="hideMe">
+                <h3>Editable Items</h3>
+
+                <h4>Gutter</h4>
+                <ul>
+                    <li><input type="color" id="gutterBackgroundSelector"> Gutter Background Colour</li>
+                    <li><input type="color" id="gutterTextSelector"> Gutter Text Colour</li>
+                </ul>
+                <h4>Main Area</h4>
+                <ul>
+                    <li><input type="color" id="mainBackgroundSelector"> Main Area Background Colour</li>
+                    <li><input type="color" id="mainSyntaxSelector"> Main Syntax Colour</li>
+                    <ul>
+                        <li><input type="color" id="commentSyntaxSelector"> Comments</li>
+                        <li><input type="color" id="syntax1Selector"> Tags</li>
+                        <li><input type="color" id="syntax2Selector"> Attributes</li>
+                        <li><input type="color" id="syntax3Selector"> Strings</li>
+                        <li><input type="color" id="syntax4Selector"> Keywords</li>
+                        <li><input type="color" id="syntax5Selector"> Functions</li>
+                        <li><input type="color" id="syntax6Selector"> Names and IDs</li>
+                    </ul>
+                </ul>
+                <h4>Fonts</h4>
+                <ul>
+                    <li><input type="radio" name="font" checked onclick="selectDefaultFont()"> Default Font</li>
+                    <li><input type="radio" name="font" onclick="selectOpenDyslexicFont()"> OpenDyslexic Font</li>
+                </ul>
+</div>
+
         </div>
 
         <div class="atomContainer col-md-9">
@@ -267,6 +271,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-<script src="/js/realTimeChanges.js"></script>
+<script src="../js/realTimeChanges.js"></script>
 </body>
 </html>

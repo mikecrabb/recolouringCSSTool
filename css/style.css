@@ -138,3 +138,7 @@ header{
 .colour-row{
     margin-bottom: 5px;
 }
+
+#hideMe{
+    visibility: hidden;
+}

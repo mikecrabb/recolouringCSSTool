@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--My CSS-->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
@@ -21,144 +21,7 @@
 
     <div class="row">
 
-        <div class="col-md-3 selections">
-            <div class="selectorContainer">
 
-
-                <h3>Editable Items</h3>
-                <h4>Gutter</h4>
-                <ul>
-                    <li><input type="color" id="gutterBackgroundSelector"> Gutter Background Colour</li>
-                    <li><input type="color" id="gutterTextSelector"> Gutter Text Colour</li>
-                </ul>
-                <h4>Main Area</h4>
-                <ul>
-                    <li><input type="color" id="mainBackgroundSelector"> Main Area Background Colour</li>
-                    <li><input type="color" id="mainSyntaxSelector"> Main Syntax Colour</li>
-                    <ul>
-                        <li><input type="color" id="commentSyntaxSelector"> Comments</li>
-                        <li><input type="color" id="syntax1Selector"> Tags</li>
-                        <li><input type="color" id="syntax2Selector"> Attributes</li>
-                        <li><input type="color" id="syntax3Selector"> Strings</li>
-                        <li><input type="color" id="syntax4Selector"> Keywords</li>
-                        <li><input type="color" id="syntax5Selector"> Functions</li>
-                        <li><input type="color" id="syntax6Selector"> Names and IDs</li>
-                    </ul>
-                </ul>
-                <h4>Fonts</h4>
-                <ul>
-                    <li><input type="radio" name="font" checked onclick="selectDefaultFont()"> Default Font</li>
-                    <li><input type="radio" name="font" onclick="selectOpenDyslexicFont()"> OpenDyslexic Font</li>
-                </ul>
-                <h3>Preset Schemes</h3>
-
-                <div class="row colour-row">
-                    <div class="col-md-4">
-                        <button class="btn aquaButton btn-sm"
-                                onclick="changeTheme('#92EFED', '#000080','#A0D3F1', '#00009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#8842B7',	'#7DFB59','#494E52')">
-                            Aqua
-                        </button>
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn purpleButton btn-sm"
-                                onclick="changeTheme('#5900A2','#DCB7F8','#DBB9F6','#58009F','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','	#30AB29','#161718')">
-                            Purple
-                        </button>
-                    </div>
-
-                    <div class="col-md-4">
-                        <button class="btn neutralButton btn-sm"
-                                onclick="changeTheme('#BB9282','#ABFEB1','#CCC7BB','#555500','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
-                            Neutral
-                        </button>
-
-                    </div>
-                </div>
-
-                <div class="row colour-row">
-                    <div class="col-md-4">
-                        <button class="btn magentaButton btn-sm"
-                                onclick="changeTheme('#A66A91','#42264A','#F3B6D8','#710038','#FFFFFF','#FB3333','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
-                            Magenta
-                        </button>
-
-                    </div>
-                    <div class="col-md-4">
-
-                    <button class="btn lilacButton btn-sm"
-                            onclick="changeTheme('#DF8CFF','#61306B','#B8A8F3','#47066A','#FFFFFF','#C91F1F','#F224F2','#F8F10C','#1DB1DC','#30AB29','#161718')">
-                        Lilac
-                    </button>
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn blueButton btn-sm"
-                                onclick="changeTheme('#8ED9FD','#25334B','#96BAFE','#061B6A','#FFFFFF','#D60303','#F224F2','#F8F10C','#8D03AB','#20771C','#161718')">
-                            Blue
-                        </button>
-                    </div>
-                </div>
-
-                <div class="row colour-row">
-                    <div class="col-md-4">
-                        <button class="btn yellowButton btn-sm"
-                                onclick="changeTheme('#C7982C','#FBF9B7','#FEFE9C','#5A4416','#9B9B9B','#D90000','#F224F2','#CF7954','#CF7954','#37CB30','#0E3F7A')">
-                            Yellow
-                        </button>
-
-                    </div>
-                    <div class="col-md-4">
-
-                        <button class="btn turquoiseButton btn-sm"
-                                onclick="changeTheme('#00B0B0','#B4FEFB','#9CE4D8','#002771','#FFFFFF','#D90000','#F224F2','#F8F10C','#6F14D1','#20771C','#4A3E49')">
-                            Turqoise
-                        </button>
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn roseButton btn-sm"
-                                onclick="changeTheme('#D79797','#FCF3E0','#F4BCB3','#710016','#FFFFFF','#0C59CD','#F224F2','#F8F10C','#FD2626','#20771C','#0CB6C9')">
-                            Rose
-                        </button>
-                    </div>
-                </div>
-
-                <div class="row colour-row">
-                    <div class="col-md-4">
-                        <button class="btn leafButton btn-sm"
-                                onclick="changeTheme('#568448','#D2FFD3','#86E893','#1D3018','#FFFFFF','#D90000','#D30CD3','#935115','#808040','#FF8000','#0E3F7A')">
-                            Leaf
-                        </button>
-
-                    </div>
-                    <div class="col-md-4">
-
-                        <button class="btn orangeButton btn-sm"
-                                onclick="changeTheme('#E48E0E','#FCE4D6','#F2C668','#4E3C10','#7A7A7A','#D90000','#F224F2','#F8FF71','#6F14D1','#76AE75','#0E3F7A')">
-                            Orange
-                        </button>
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn appleButton btn-sm"
-                                onclick="changeTheme('#669C56','#D2FFD3','#C1F08E','#263E20','#7A7A7A','#D90000','#F224F2','#BF810D','#6F14D1','#804069','#0E3F7A')">
-                            Apple
-                        </button>
-                    </div>
-                </div>
-
-
-                <button id="defaultTheme" class="btn btn-secondary defaultButton"
-                        onclick="changeTheme('#DDDDDD', '#000000','#1D1F21','#C5C8C6','#969896','#CC6666','#DE935F','#B5BD68','#B294BB','#8ABEB7','#81A2BE')">
-                    Default
-                </button>
-
-
-
-
-
-
-
-
-            </div>
-        </div>
 
         <div class="atomContainer col-md-9">
             <div class="row">
@@ -267,6 +130,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-<script src="/js/realTimeChanges.js"></script>
+<script src="../js/realTimeChanges.js"></script>
 </body>
 </html>
